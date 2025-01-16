@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
- 
+import 'package:flutter_application_1/views/login_UI.dart';
+import 'package:flutter_application_1/views/signup_UI.dart';
+
 class WelcomeUI extends StatefulWidget {
   const WelcomeUI({super.key});
- 
+
   @override
   State<WelcomeUI> createState() => _WelcomeUIState();
 }
- 
+
 class _WelcomeUIState extends State<WelcomeUI> {
   @override
   Widget build(BuildContext context) {
@@ -51,11 +53,17 @@ class _WelcomeUIState extends State<WelcomeUI> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginUi(),
+                        ));
+                  },
                   child: Text(
                     'LOGIN',
-                     style: TextStyle(
-                      color: Colors.black,  
+                    style: TextStyle(
+                      color: Colors.black,
                     ),
                   ),
                   style: OutlinedButton.styleFrom(
@@ -72,11 +80,17 @@ class _WelcomeUIState extends State<WelcomeUI> {
                   width: MediaQuery.of(context).size.width * 0.03,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignupUi(),
+                        ));
+                  },
                   child: Text(
                     'SIGNUP',
                     style: TextStyle(
-                      color: Colors.white,  
+                      color: Colors.white,
                     ),
                   ),
                   style: ElevatedButton.styleFrom(

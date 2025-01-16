@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/views/welcome_UI.dart';
+import 'package:flutter_application_1/views/login_UI.dart';
 
-void main(){
+void main() {
   runApp(
     Dtisau(),
   );
@@ -21,7 +21,7 @@ class _DtisauState extends State<Dtisau> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomeUI(),
+      home: LoginUi(),
     );
   }
 }
