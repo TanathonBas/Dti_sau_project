@@ -134,7 +134,22 @@ class _LoginUiState extends State<LoginUi> {
                     MediaQuery.of(context).size.height * 0.065,
                   ),
                 ),
-              )
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.02,
+              ),
+              Text(
+                "Don't have an Account?",
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  'SingUp',
+                  style: TextStyle(
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
